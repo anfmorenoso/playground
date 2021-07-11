@@ -48,10 +48,6 @@ class Grid:
                     raise UnevenGridException
         return n_cols
 
-    def print_initial_state(self):
-        for line in self.initial_state:
-            print(" ".join(str(cell) for cell in line))
-
     def __str__(self):
         laconcha = []
         for line in self.lines_of_cells:

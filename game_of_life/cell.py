@@ -85,9 +85,9 @@ class Cell:
 
     def __str__(self):
         if self.is_alive == True:
-            return "1"
+            return "*"
         else:
-            return "0"
+            return " "
 
     def __eq__(self, other):
         return (
