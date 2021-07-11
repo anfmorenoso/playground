@@ -1,3 +1,4 @@
+from numpy.random import choice
 from typing import List, Tuple
 from .cell import Cell
 
@@ -24,6 +25,13 @@ class Grid:
         for line in self.lines_of_cells:
             for cell in line:
                 cell.calculate_neighbors(n_lines=self.n_lines, n_cols=self.n_cols)
+
+    @classmethod
+    def from_random_start(cls, n_lines: int, n_columns: int):
+        initial_state = []
+        for i in range(n_lines):
+            initial_state.append(list(choice([1, 0], size=n_columns)))
+        return cls(initial_state)
 
     def _ensure_lines(self) -> int:
         n_lines = len(self.initial_state)
