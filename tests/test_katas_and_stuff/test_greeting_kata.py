@@ -1,5 +1,5 @@
 import pytest
-from greeting_kata import greet, greet_two, is_shouted, split_name
+from katas_and_stuff.greeting_kata import greet, greet_two, is_shouted, split_name
 
 
 def test_greet():
