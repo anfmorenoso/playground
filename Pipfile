@@ -9,6 +9,7 @@ numpy = "*"
 ipython = "*"
 black = "==21.6b0"
 jupyter = "*"
+notion = "*"
 
 [dev-packages]
 pytest = "*"
