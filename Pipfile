@@ -8,7 +8,7 @@ pandas = "*"
 numpy = "*"
 ipython = "*"
 black = "==21.6b0"
-jupyter = "*"
+jupyterlab = "*"
 notion = "*"
 
 [dev-packages]
